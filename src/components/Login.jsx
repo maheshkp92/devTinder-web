@@ -29,7 +29,6 @@ const Login = () => {
       navigate("/");
     } catch (e) {
       setError(e?.response?.data || "Something Went Wrong!");
-      console.log(e);
     }
   };
   return (

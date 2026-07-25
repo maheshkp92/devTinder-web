@@ -23,3 +23,5 @@
 - If token is not present, user redirect back to /login page
 - Logout feature is implemented
 - add validation on Login form
+- Get Feed data by callong /feed GET API
+- Build User Card to display feed user data
