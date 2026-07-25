@@ -25,3 +25,4 @@
 - add validation on Login form
 - Get Feed data by callong /feed GET API
 - Build User Card to display feed user data
+- Created Edit Profile page and also show live preview on edit profile page
