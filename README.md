@@ -21,3 +21,5 @@
 - On Logout, cleared the user slice data and redirect to /login page
 - You cannot access auth routes without token
 - If token is not present, user redirect back to /login page
+- Logout feature is implemented
+- add validation on Login form
