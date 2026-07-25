@@ -19,3 +19,5 @@
 - On Login form, making an api call and storing user data in redux store
 - NavBar should display login user profile pic and display user first name
 - On Logout, cleared the user slice data and redirect to /login page
+- You cannot access auth routes without token
+- If token is not present, user redirect back to /login page
