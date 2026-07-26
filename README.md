@@ -31,8 +31,5 @@
 - Create Connection Request Page
 - feature: accept/reject connection request
 - send or ignore connection request from feed page
-
-remaining :
-
 - create sign up page
 - e2e testing
