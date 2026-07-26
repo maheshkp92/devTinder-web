@@ -31,7 +31,7 @@ const Connections = () => {
   return (
     <div className="text-center my-10">
       <h1 className="font-bold text-xl">Connections</h1>
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly flex-wrap">
         {connections.map((item, index) => (
           <ConnectionCard key={item?._id || index} info={item} />
         ))}

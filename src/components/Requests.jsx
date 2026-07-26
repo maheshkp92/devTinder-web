@@ -24,14 +24,22 @@ const Requests = () => {
   }, []);
 
   if (requests.length === 0)
-    return <h1 className="font-bold text-xl">No Requests Found!!</h1>;
+    return (
+      <h1 className="flex justify-center my-10 font-bold text-xl">
+        No Requests Found!!
+      </h1>
+    );
 
   return (
     <div className="text-center my-10">
       <h1 className="font-bold text-xl">Requests</h1>
-      <div className="flex justify-between">
+      <div className="flex justify-evenly flex-wrap">
         {requests.map((item, index) => (
-          <RequestCard key={item?._id || index} info={item?.fromUserId} />
+          <RequestCard
+            key={item?._id || index}
+            info={item?.fromUserId}
+            requestId={item?._id}
+          />
         ))}
       </div>
     </div>

@@ -29,3 +29,10 @@
 - Show toast on saving profile successfully
 - Created connection page
 - Create Connection Request Page
+- feature: accept/reject connection request
+
+remaining :
+
+- send or ignore connection request from feed page
+- create sign up page
+- e2e testing
