@@ -1,6 +1,6 @@
 import React from "react";
 
-const ConnectionCard = ({ info }) => {
+const RequestCard = ({ info }) => {
   const { photoUrl, firstName, lastName, about, age, gender, skills } = info;
   return (
     <div className="card card-side bg-base-200 shadow-lg my-10 m-2">
@@ -23,9 +23,13 @@ const ConnectionCard = ({ info }) => {
             .filter(Boolean)
             .join(" | ")}
         </p>
+        <div className="card-actions justify-center">
+          <button className="btn btn-primary">Reject</button>
+          <button className="btn btn-secondary">Accept</button>
+        </div>
       </div>
     </div>
   );
 };
 
-export default ConnectionCard;
+export default RequestCard;
