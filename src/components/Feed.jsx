@@ -9,7 +9,7 @@ const Feed = () => {
   const feed = useSelector((store) => store.feed);
   const dispatch = useDispatch();
   const getFeed = async () => {
-    if (feed) return;
+    if (feed.length > 0) return;
 
     try {
       const result = await axios.get(BASE_URL + "/feed", {
@@ -24,6 +24,10 @@ const Feed = () => {
   useEffect(() => {
     getFeed();
   }, []);
+
+  if (feed?.length <= 0)
+    return <h1 className="flex justify-center my-10">No New Users Found</h1>;
+
   return (
     feed && (
       <div className="flex justify-center my-3">

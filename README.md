@@ -30,9 +30,9 @@
 - Created connection page
 - Create Connection Request Page
 - feature: accept/reject connection request
+- send or ignore connection request from feed page
 
 remaining :
 
-- send or ignore connection request from feed page
 - create sign up page
 - e2e testing
